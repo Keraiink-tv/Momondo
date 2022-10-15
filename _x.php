@@ -1,4 +1,10 @@
 <?php
+define('NAME_MIN_LEN', 2);
+define('NAME_MAX_LEN', 10);
+define('LAST_NAME_MIN_LEN', 2);
+define('LAST_NAME_MAX_LEN', 10);
+// ##############################
+
 
 define('_REGEX_EMAIL', '/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/');
 

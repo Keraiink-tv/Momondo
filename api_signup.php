@@ -8,8 +8,8 @@ $user = [
     'user_psw' => $_POST['user_psw'],
     'user_email' => $_POST['email']
 ];
-
 _respond($user);
-
-
-
+exit(); 
+  
+  
+ 
