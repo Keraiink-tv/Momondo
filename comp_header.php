@@ -8,6 +8,7 @@
     <script src="app.js" defer></script>    
     <script src="validator.js" defer></script>    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/bc393b01a6.js" crossorigin="anonymous"></script>
     <title>
         <?php echo $_title ?? 'Upppsss....' ?>
     </title>
@@ -28,7 +29,10 @@
                 }
                 // Denne funktion fjerner selve login
                 if( ! $_SESSION ){
-                    echo '<a href="login">Login</a>';
+                    echo '<a href="login">
+ 
+ 
+                    <i class="fa-regular fa-circle-user"></i> Login</a>';
                 }
                 ?>
             <?php
