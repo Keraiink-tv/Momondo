@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteRule ^$                  view_index.php [NC,L]
+RewriteRule ^login$             view_login.php [NC,L]
+RewriteRule ^logout$            view_logout.php [NC,L]
+RewriteRule ^signup$            view_signup.php [NC,L]
+RewriteRule ^admin$             view_admin.php [NC,L]
+RewriteRule ^upload$            view_upload.php [NC,L]
+
+ErrorDocument 404 /view_404.php
+
+
