@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #210340;
+}
+/* Momondo logo */
+.momondo_logo img{
+    max-width: 10%;
+    margin: 8px 8px;
+    position: absolute;
+}
+
+/* Navigaton */
+.links{
+  text-align: end;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+.links a{
+  color: #f3f0f5;
+  text-decoration: none;
+  border: solid 1px #f3f0f5;
+  border-radius: 4px;
+  padding: 0.6rem;
+  margin: 0.2rem;
+}
+.links a:hover{
+  background: #f3f0f5;
+  color: #210340;
+}
+.flights_container{
+  color: #f3f0f5;
+  text-align: center;
+}
+
+
+
+/* Flight search  */
+div#flights-search{
+    display: flex;
+    width: 30vw;
+    padding: 0.1rem;
+    margin: 5rem 31rem;
+    background-color: #0095cc;
+    border-radius: 4px;
+    justify-content: center;
+  }
+  .button_search{
+    position: absolute;
+    left: 66%;
+    top: 22.5%;
+    color: #f3f0f5;
+    border: solid 5px none;
+    padding: 2.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50px;
+    background-color: rgb(173, 47, 89);
+  }
+  .button_search a{
+    color: #f3f0f5;
+    position: absolute;
+    right: 35%;
+    top: 39%;
+    text-decoration: none;
+  }
+
+  input#from-input{
+    background-color: #f3f0f5;
+    border-color: #0095cc;
+    margin: 0px;
+    padding: 16px;
+  }
+
+
+  div#flights-search div#from-container{
+    display: flex;
+    padding: 4px;
+    background-color: #0095cc;
+  }
+  div#flights-search div#from-container div#from-results{
+    display: none;
+    margin: 4.98rem 0rem;
+    padding: 1rem;
+    width: 30%;
+    height: 17rem;
+    background: #f3f0f5;
+    border-radius: 10px;
+    position: absolute;
+    overflow-x: hidden;
+    color: black;
+  }
+  div.from-city{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f3f0f5;
+  }
+  div.from-city img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+  }
+  input#to-input{
+    background-color: #f3f0f5;
+    border-color:#0095cc ;
+    padding: 16px;
+  }
+  
+  div#flights-search div#to-container{
+    display: flex;
+    padding: 4px;
+    background-color: #0095cc ;
+  }
+  div#flights-search div#to-container div#to-results{
+    display: none;
+    margin: 4.98rem 5rem;
+    padding: 1rem;
+    width: 30%;
+    height: 17rem;
+    background: #f3f0f5;
+    border-radius: 10px;
+    position: absolute;
+    overflow-x: hidden;
+    color: black;
+  }
+  div.to-city{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f3f0f5;
+  }
+  div.to-city img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+  }
+  /* Her styler vi delete_flies */
+  .from_result{
+    padding: 0.5rem;
+    cursor: pointer;
+    border: 1px solid #f3f0f5;
+    color: #f3f0f5;
+  }
+  .from_result:hover{
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .from_result *{
+    pointer-events: none;
+  }
+  .hide{
+    display: none;
+  }
+  #admin_flights{
+    margin: 1rem;
+    border: solid #f3f0f5 2px;
+    border-radius: 5px;
+    padding: 1rem 0.8rem;
+    color: #f3f0f5;
+  }
+  #admin_flights img{
+    max-width: 8rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+  .form_login{
+    text-align: center;
+    padding-top: 2rem;
+    border: solid 5px none;
+  }
+  .form_login h1{
+    color: #f3f0f5;
+  }
+  .form_login p{
+    color: #f3f0f5;
+    padding: 0.5rem;
+  }
+  .form_login img{
+    max-width: 24rem;
+    border-radius: 5px;
+  }
+  .form_login input{
+    border-radius: 5px;
+    padding: 0.1rem;
+  }
+  .form_login button{
+    background: #210340;
+    color: #f3f0f5;
+    text-decoration: none;
+    padding: 0.3rem;
+    margin: 0.2rem;
+    border: solid 1px#f3f0f5;
+    border-radius: 5px;
+  }
+  .form_login button:hover{
+    background: #f3f0f5;
+    color: #210340;
+  }
+  /* Signup form */
+  #signup_form{
+    text-align: center;
+    padding: 1rem;
+  }
+  #signup_form input{
+    border-radius: 4px;
+    padding: 0.1rem;
+  }
+  #signup_form button{
+    background: #f3f0f5;
+    color: #210340;
+    text-decoration: none;
+    padding: 0.3rem;
+    margin: 0.2rem;
+    border: solid 1px#f3f0f5;
+    border-radius: 5px;
+  }
+  #signup_form button:hover{
+    background: #210340;
+    color: #f3f0f5;
+  }
+  #p_email{
+    color: #f3f0f5;
+    position: absolute;
+    top: 17%;
+    left: 36.9%;
+  }
+
+  /* Upload form */
+
+  #upload_form{
+    text-align: center;
+    color: #f3f0f5;
+  }
+
+  #upload_form h1{
+    color: #f3f0f5;
+    padding: 1rem;
+  }
