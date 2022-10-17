@@ -41,8 +41,19 @@
       Email already in use
     </p>
 
-    <input name="psw" type="password" placeholder="Password">
+    <input 
+    name="psw" 
+    type="password" 
+    placeholder="Password"
+    data-validate="str"
+    >
 
+    <input 
+    name="psw" 
+    type="password" 
+    placeholder="Password"
+
+    >
 
 
 
