@@ -49,7 +49,7 @@ function hide_from_results(){
 async function get_cities_from(){
   let conn = await fetch('api-get-cities-from.php')
   let data = await conn.json() // [{"city_name":"a"},{"city_name":"b"}]
-  let div_city = `<div class="from-city">
+  let div_city = `<div class="from-city" onclick="select_city()">
                     <img src="#img#">
                     <p>xxx</p>
                     <p>Population: #population#</p>
@@ -71,6 +71,18 @@ async function get_cities_from(){
   console.log(data)
   document.querySelector("#from-results").insertAdjacentHTML("afterbegin", all_cities)
 }
+
+function select_city(){
+  const city_name = event.target.querySelector(".from-city").innerText
+  console.log(city_name)
+  document.querySelector("#from_city").value = from-city
+  document.querySelector("#from_results").style.display = "none"
+  // document.querySelector("#from_results").classList.add('hide')
+  document.querySelector("#from_results").innerHTML = ""
+}
+
+
+
 
 
 // Dette er for at få functionen op på "to"
@@ -135,3 +147,6 @@ async function delete_flight(){
   console.log(data)
   frm.remove()
 }
+
+
+
