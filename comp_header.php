@@ -56,6 +56,7 @@
 
                     <a href="<?php $_page ?>?language=dk">DK</a>
                     <a href="<?php $_page ?>?language=en">EN</a>
+                    
 
         </div>
     </nav>
