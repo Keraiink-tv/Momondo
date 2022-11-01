@@ -8,11 +8,11 @@ $data = json_decode($data, true);
 
 <section class="flights_container">
 <h1><?= $dictionary[$language.'_welcome'] ?></h1>
-      <div>
+      <div id="flight-form-container">
         <div id="flights-search">
             <form>
             <div id="from-container">
-              <input id="from-input" type="text" placeholder="<?= $dictionary[$language.'_'] ?>" name="from-input"
+              <input id="from-input" type="text" placeholder="<?= $dictionary[$language.'_from'] ?>" name="from-input"
               onfocus = "focus_from_results()"
               oninput="show_from_results()"
              
@@ -24,7 +24,7 @@ $data = json_decode($data, true);
             
             <form>
             <div id="to-container">
-              <input id="to-input" type="text" placeholder="Til?"
+              <input id="to-input" type="text" placeholder="<?= $dictionary[$language.'_to'] ?>" name="to-input"
               oninput="show_to_results()"
               onblur="hide_to_results()"
               >
@@ -33,7 +33,7 @@ $data = json_decode($data, true);
             </div>             
         </form>    
     </div>
-    <div class="button_search"><a href="/">Søg</a> </div> 
+   
 </section>
 
 <?php

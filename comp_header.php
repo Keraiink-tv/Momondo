@@ -20,6 +20,7 @@
             </div>
 
         <div class="links">
+            <a href="trips">Trips</a>
             <?php
                 ini_set('display_errors', 0);
                 session_start();

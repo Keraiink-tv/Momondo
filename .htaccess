@@ -8,6 +8,8 @@ RewriteRule ^logout$            view_logout.php [NC,L]
 RewriteRule ^signup$            view_signup.php [NC,L]
 RewriteRule ^admin$             view_admin.php [NC,L]
 RewriteRule ^upload$            view_upload.php [NC,L]
+RewriteRule ^trips$             view_trips.php [NC,L]
+
 
 ErrorDocument 404 /view_404.php
 
